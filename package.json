@@ -1,0 +1,25 @@
+{
+  "name": "legend-maker-poc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:imgs": "node build/build-imgs-json.js",
+    "start": "yarn build:imgs && webpack-dev-server --mode development --open",
+    "dev": "yarn build:imgs && webpack --mode development",
+    "build": "yarn build:imgs && webpack --mode production"
+  },
+  "keywords": [],
+  "author": "Luke Batchelor",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "copy-webpack-plugin": "^4.5.2",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
