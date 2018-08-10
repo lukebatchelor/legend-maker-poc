@@ -1,3 +1,10 @@
+import fetch from "unfetch";
+import style from "./main.css";
+
 const arr = [1, 2, 3];
 const iAmJavascriptES6 = () => console.log(...arr);
 window.iAmJavascriptES6 = iAmJavascriptES6;
+
+fetch("imgs/imgs.json")
+  .then(resp => resp.json())
+  .then(console.log);
