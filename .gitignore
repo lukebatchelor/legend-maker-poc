@@ -1,3 +1,4 @@
 node_modules
 dist
 public/imgs/imgs.json
+.DS_Store
